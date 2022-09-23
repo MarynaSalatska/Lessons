@@ -1,0 +1,92 @@
+[class*="__container"] {
+  max-width: 810px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+[class*="__artical"] {
+  line-height: 160%;
+  font-weight: 400;
+}
+
+body {
+  background-image: url("../img/sunrise.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: scroll;
+  max-width: 810px;
+  margin: 0 auto;
+}
+
+.imgs__container{
+  padding-left: 60px;
+  font-size: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 60px;
+}
+
+.img__1 {
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(49, 175, 247, 0.913), rgb(236, 244, 15));
+  
+}
+
+.img__2 {
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(49, 175, 247, 0.913), rgb(236, 244, 15));
+}
+
+h1 {
+  text-align:start;
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 24px ;
+  line-height: 180%;
+}
+
+.first__artical {
+  line-height: 150%;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.second__artical {
+margin-bottom: 24px;
+}
+
+.third__artical {
+  margin-bottom: 48px;
+}
+
+.fourth__artical {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 48px;
+  padding-left: 60px;
+}
+
+.fifth__artical {
+margin-bottom: 24px;
+}
+
+ul{
+  margin-bottom: 24px;
+}
+
+li {
+  list-style: inside;
+  line-height: 180%;
+}
+
+
+
+
+
+
+
