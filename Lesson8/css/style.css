@@ -1,0 +1,339 @@
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color:#424551;
+  line-height: 160%;
+  margin-left: 345px;
+}
+
+[class*="__artical"] {
+  line-height: 160%;
+  font-weight: 400;
+}
+
+h2 {
+  color: #1E212C;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 130%;
+}
+h3{
+  color: #1E212C;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+main h2 {
+  margin-bottom: 40px;
+}
+
+.course h2 {
+  margin-bottom: 16px;
+}
+
+.about {
+  width: 600px;
+  margin-bottom: 200px;
+}
+
+.about p {
+  padding-bottom: 48px;
+}
+
+h3 {
+  padding-bottom: 24px;
+}
+.course {
+  width: 600px;
+}
+
+.curator {
+  font-weight: 700;
+  line-height: 150%;
+  padding-bottom: 8px;
+}
+
+.position {
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+
+.info{
+  margin-bottom: 32px;
+}
+
+.about li::before {
+  background: url('../sign/check.jpg') 0 2px no-repeat;
+  content: "";
+  padding-left: 32px;
+  min-height: 35px;
+}
+
+.star::before {
+  background: url('../sign/Star\ \(Stroke\).jpg') 0 2px no-repeat;
+  content: "";
+  padding-left: 32px;
+  min-height: 35px;
+
+}
+
+.play::before {
+  background: url('../sign/Play.jpg') 0 2px no-repeat;
+  content: "";
+  padding-left: 32px;
+  min-height: 35px;
+}
+
+.profile::before {
+  background: url('../sign/Profile.jpg') 0 2px no-repeat;
+  content: "";
+  padding-left: 32px;
+  min-height: 35px;
+}
+
+/**/
+.link {
+  color:aqua;
+}
+.link:hover {
+  color: violet;
+  text-decoration:underline;
+}
+
+.block {
+  background-color: aquamarine;
+  color:brown;
+  padding: 15px;
+}
+.block:hover {
+  background-color:burlywood;
+  color: red;
+  padding: 0px;
+}
+
+.item {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.block:hover .item {
+  visibility: visible;
+  opacity: 1;
+}
+
+.active:hover {
+  color: green;
+}
+
+.active:active {
+  color: red;
+}
+
+.pump ul {
+  margin-left: 20px;
+  color:rgb(231, 136, 19);
+}
+.pump ul ul {
+  display: none;
+}
+ul li:hover ul {
+  display: block;
+  color: rgb(222, 18, 177);
+}
+
+.focu:focus {
+  outline: 2px solid blue;
+}
+
+.velit {
+  background-color:rgb(92, 84, 84);
+  color:antiquewhite;
+  display: none;
+}
+.velit:target {
+  display: block;
+}
+.hello {
+  color: rgb(248, 4, 191);
+}
+
+.text {
+  background-color: rgb(235, 212, 237);
+  color: rgb(44, 88, 7);
+  padding: 15px;
+  line-height: 120%;
+}
+
+.text p:not(:last-child) {
+  margin-bottom: 15px;
+}
+/* звичайний запис (зверху всі крім останнього п, означає те саме)
+.text p {
+  margin-bottom: 15px;
+}
+.text p:last-child {
+  margin-bottom: 0;
+}
+*/
+.text p:first-child {
+  color: blue;
+}
+
+.text *:first-child { /* до прешого будь-якого об-кту*/
+  text-transform: uppercase;
+}
+
+.text p:last-of-type {
+  color: rgb(193, 18, 18);
+}
+.text p:last-child {
+  text-decoration: underline;
+}
+
+.text div:first-of-type {
+  background-color: aquamarine;
+}
+
+.text p:nth-child(3){ /*обов'язково параграф*/
+  text-decoration: rgb(19, 192, 215) wavy underline;;
+}
+
+.text p:nth-child(even) {
+  text-decoration-line: line-through;
+}
+
+.dop::after {
+  content: "^-^";
+}
+
+/* game */
+
+.name {
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.game {
+  max-width: 700px;
+  min-height: 700px;
+  margin: 0 auto;
+  background-image: url("../img/fire.jpg");
+  background-repeat: no-repeat;
+  background-size:100%; 
+}
+.start {
+  border-radius:0% 100% 100% 0% / 0% 100% 0% 100%;
+  width: 80px;
+  height: 50px;
+  background: linear-gradient(180deg, red, yellow);
+  color: rgb(2, 87, 33);
+  text-shadow: #b80342 1px 0 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 17px;
+}
+
+.end {
+  border-radius:100% 0% 100% 0% / 100% 100% 0% 0%;
+  width: 80px;
+  height: 50px;
+  background: linear-gradient(75deg, rgba(39, 33, 143, 1) 0%, rgba(224, 14, 138, 1) 55%, rgba(11, 191, 180, 1) 100%);
+  color: black;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 17px;
+  margin-left: 620px;
+}
+
+.line-1,.line-2,.line-3,.line-4,.line-5,.line-6,.line-7 {
+  visibility: hidden;
+}
+
+.start:hover+.line-1,
+.line-1:hover,
+.line-1:hover+.line-2,
+.line-2:hover,
+.line-2:hover+.line-3,
+.line-3:hover,
+.line-3:hover+.line-4,
+.line-4:hover,
+.line-4:hover+.line-5,
+.line-5:hover,
+.line-5:hover+.line-6,
+.line-6:hover+.line-7,
+.line-7:hover {
+  visibility: visible;
+}
+
+
+.line-1 {
+  background-color: rgb(180, 8, 8);
+  width: 200px;
+  height: 40px;
+}
+
+
+.line-2 {
+  background-color: rgb(228, 98, 5);
+  width: 40px;
+  height: 200px;
+  margin-left: 160px;
+}
+
+
+.line-3 {
+  background-color: rgb(212, 240, 2);
+  width: 340px;
+  height: 30px;
+  margin-left: 160px;
+}
+
+.line-4 {
+  background-color: rgb(12, 224, 19);
+  width: 30px;
+  height: 100px;
+  margin-left: 470px;
+}
+
+.line-5 {
+  background-color: rgb(51, 7, 182);
+  width: 300px;
+  height: 30px;
+  margin-left: 200px;
+}
+
+.line-6 {
+  background-color: rgb(101, 8, 172);
+  width: 40px;
+  height: 330px;
+  margin-left: 200px;
+}
+
+.line-7 {
+  background-color: rgb(51, 7, 182);
+  width: 500px;
+  height: 40px;
+  margin-left: 200px;
+}
+
+.footer__container:hover .yoop{
+  visibility: visible;
+  opacity: 1;
+}
+.yoop {
+  background-image: url("../img/GoodGame.jpg");
+  max-width: 300px;
+  min-height: 700px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
