@@ -1,0 +1,114 @@
+body{
+  background: url('../img/pexels-oltion-bregu-338454.jpg') 0 0 / cover no-repeat;
+}
+
+.section {}
+
+.section__body {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(81, 81, 218, 0.8);
+  overflow: hidden;
+}
+.section__body:hover .section__item {
+  transform: translate(0px,0px);
+}
+.section__item {
+  width: 200px;
+  height: 200px;
+  background-color: #35c264;
+  transform: translate(100%,0%);
+  background: url('..//img/photo-1512633017083-67231aba710d.avif') 0 0 / cover no-repeat;
+}
+
+/* transform
+.section__item {
+  transform: translate(100%, 100%);
+}
+*/
+
+/*  
+.section__item {
+  transform: scale(0.4);
+}*/
+
+/*  класна штука
+.section__item {
+  transform-origin: 10px 50px;
+  transform: rotate(60deg);
+}*/
+
+/*  
+.section__item {
+  transform: skew(-60deg, 10deg);
+}*/
+
+/* perspective */
+.section__body {
+  perspective: 400px;
+}
+.section__item {
+  transform: rotateX(20deg);
+}
+
+/* rotate3d */
+.section__item {
+  transform: rotate3d(1,1,1,20deg);
+}
+
+/*  transform-style:*/
+.section__body {
+  perspective: 300px;
+  transform-style: preserve-3d;
+}
+.section__item {
+  transform: rotatey(180deg);
+  transition: all 0.3s ease 0s;
+}
+
+.section__body:hover .section__item{
+  transform: rotateY('0deg');
+}
+
+/* 
+.section__item {
+  backface-visibility: hidden;
+} */ 
+
+
+.car{
+  position: absolute;
+  left: 50px;
+  top:500px;
+  perspective: 400px;
+}
+
+.car__part1{
+  position: relative;
+  left: 280px;
+  top: 422px;
+}
+
+.car__part2{
+  position: relative;
+  left: 534px;
+  top: 254px;
+}
+
+.car__part3{
+  position: relative;
+  left: 280px;
+  top: 254px;
+}
+
+.car__part4{
+  position: relative;
+  left: 534px;
+  top: 86px;
+}
+
+.car:hover .car__container {
+  transform: rotate(30deg);
+  transform-origin: 25px 100px;
+  transition: all 0.3s ease 0s;
+}
